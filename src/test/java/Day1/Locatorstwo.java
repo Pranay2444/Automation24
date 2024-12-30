@@ -1,0 +1,21 @@
+package Day1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Locatorstwo {
+
+	public static void main(String[] args) throws InterruptedException {
+		 
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://in.indeed.com/");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		
+		driver.findElement(By.id("text-input-what")).sendKeys("Automation testing");
+		
+		
+
+	}
+
+}
